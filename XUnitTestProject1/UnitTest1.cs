@@ -13,6 +13,7 @@ namespace XUnitTestProject1
         public void EmailVerify(dynamic email)
         {
             
+
             Mock<TestService> mockTestService = new Mock<TestService>();
             var result=mockTestService.Object.TestEmail(email.ToString());
             Xunit.Assert.True(result);
